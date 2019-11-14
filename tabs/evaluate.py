@@ -13,6 +13,4 @@ credit score. (They say that this does not impact your credit score.)
 For an anonymous convenient estimate, I reverse-engineered the Lending Club formula using their public
 data and an xgboost model.
 This also enables you to do interactive "what-if" analysis!
-"""),
-
-html.Img(src='/assets/fabian-blank-pElSkGRA2NU-unsplash.jpg', style={'width':'100%'})]
+""")]
