@@ -44,7 +44,7 @@ layout = html.Div([
 
     """),
 
-    html.Div(id='prediction-content', style={'fontWeight':'bold'}),
+    html.Div(id='prediction-content', style={'fontWeight': 'bold'}),
 
     html.Div([
         dcc.Markdown('###### Area'),
@@ -95,15 +95,16 @@ layout = html.Div([
         dcc.Markdown('###### Listing Price'),
         dcc.Slider(
             id='list_price',
-            min=250000,
+            min=1000000,
             max=5000000,
-            step=25000,
+            step=250000,
             value=1000000,
-            marks={n: f'{n/1000:.0f}k' for n in range(250000, 5000000, 25000)}
+            marks={n: f'{n/1000:.0f}k' for n in range(1000000, 5000000, 250000)}
         ),
     ], style=style),
 
 ])
+
 
 @app.callback(
     Output('prediction-content', 'children'),
@@ -112,7 +113,7 @@ layout = html.Div([
      Input('baths', 'value'),
      Input('offers', 'value'),
      Input('list_price', 'value')])
-def predict(cities, bedrooms, baths, offers, list_price):
+def predict(area, bedrooms, baths, offers, list_price):
 
     year = 2019
     df = pd.DataFrame(
