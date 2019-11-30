@@ -123,6 +123,10 @@ def predict(area, bedrooms, baths, offers, list_price):
 
     pipeline = load('model/pipeline.joblib')
     y_pred_log = pipeline.predict(df)
-    #y_pred = (y_pred_log)[0]
+    y_pred = y_pred_log[0]
+    percent_over = ((y_pred - list_price) / list_price) * 100
+    per_offer = percent_over / offers
+    results = f'The predicted winning bid is ${y_pred:,.0f} which is {percent_over:.2f}% over the asking price or \
+                {per_offer:.2f}% per offer.'
 
-    return y_pred_log[0]
+    return results
