@@ -108,7 +108,7 @@ layout = html.Div([
 
 @app.callback(
     Output('prediction-content', 'children'),
-    [Input('cities', 'value'),
+    [Input('area', 'value'),
      Input('bedrooms', 'value'),
      Input('baths', 'value'),
      Input('offers', 'value'),
@@ -123,6 +123,6 @@ def predict(area, bedrooms, baths, offers, list_price):
 
     pipeline = load('model/pipeline.joblib')
     y_pred_log = pipeline.predict(df)
-    y_pred = np.expm1(y_pred_log)[0]
+    #y_pred = (y_pred_log)[0]
 
-    return y_pred
+    return y_pred_log[0]
