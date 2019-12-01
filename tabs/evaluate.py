@@ -5,12 +5,24 @@ import dash_html_components as html
 from app import app
 
 layout = [dcc.Markdown("""
-### Intro
-This web app enables you to get a quick, anonymous estimate of what interest rate you could get on
-a Lending Club peer-to-peer loan.
-Lending Club will give you an estimate directly, but you have to provide your name, and they pull your
-credit score. (They say that this does not impact your credit score.)
-For an anonymous convenient estimate, I reverse-engineered the Lending Club formula using their public
-data and an xgboost model.
-This also enables you to do interactive "what-if" analysis!
-""")]
+### Final Results
+
+Several metrics were calculated in order to evaluate the predictions versus the actuals:
+
+|  Metric      |  Result   |
+|--------------|-----------|
+| Median Error |  0.49%    |
+| Within 1%    | 14.69%    |
+| Within 5 %   | 69.72%    |
+| Within 10%   | 91.49%    |
+
+
+The predictions were equal to or greater than the actual winning offer 53.48% of the time.
+
+A histogram of the percentage prediction errors shows the distribution:
+
+![Prediction_Errors](/img/prediction_errors.png)
+
+"""),
+
+html.Img(src='/img/prediction_errors.png')]
