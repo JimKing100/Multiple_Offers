@@ -5,7 +5,7 @@ The contents include the following:
 
 data - a data directory
 
-- Marin-MultiOffers-2015-2019-Final.csv - The raw data dowmloaded from the Marin MLS for muliple offer sales in 2015-2019.
+- Marin-MultiOffers-2015-2019-Final.csv - The raw data downloaded from the Marin MLS for muliple offer sales in 2015-2019.
 - prediction_errors.png - The prediction errors histogram used in the Evaluate tab.
 
 model - the model directory
