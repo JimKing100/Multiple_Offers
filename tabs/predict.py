@@ -51,7 +51,7 @@ layout = html.Div([
         dcc.Dropdown(
             id='area',
             options=[{'label': city, 'value': city} for city in cities],
-            value=cities[0]
+            value=cities[10]
         ),
     ], style=style),
 
@@ -84,10 +84,10 @@ layout = html.Div([
         dcc.Slider(
             id='offers',
             min=2,
-            max=28,
+            max=15,
             step=1,
-            value=2,
-            marks={n: str(n) for n in range(2, 28, 1)}
+            value=3,
+            marks={n: str(n) for n in range(2, 15, 1)}
         ),
     ], style=style),
 
@@ -96,10 +96,10 @@ layout = html.Div([
         dcc.Slider(
             id='list_price',
             min=1000000,
-            max=5000000,
-            step=250000,
-            value=1000000,
-            marks={n: f'{n/1000:.0f}k' for n in range(1000000, 5000000, 250000)}
+            max=3000000,
+            step=100000,
+            value=1500000,
+            marks={n: f'{n/1000:.0f}k' for n in range(1000000, 3000000, 100000)}
         ),
     ], style=style),
 

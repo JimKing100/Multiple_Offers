@@ -7,6 +7,7 @@ from app import app
 layout = [dcc.Markdown("""
 ### Final Results
 
+The predictions were equal to or greater than the actual winning offer 53.48% of the time.
 Several metrics were calculated in order to evaluate the predictions versus the actuals:
 
 |  Metric      |  Result   |
@@ -17,12 +18,6 @@ Several metrics were calculated in order to evaluate the predictions versus the 
 | Within 10%   | 91.49%    |
 
 
-The predictions were equal to or greater than the actual winning offer 53.48% of the time.
-
-A histogram of the percentage prediction errors shows the distribution:
-
-![Prediction_Errors](/img/prediction_errors.png)
-
 """),
 
-html.Img(src='/img/prediction_errors.png')]
+html.Img(src='https://raw.githubusercontent.com/JimKing100/Multiple_Offers/master/data/prediction_errors.png')]
