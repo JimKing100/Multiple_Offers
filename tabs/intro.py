@@ -6,8 +6,8 @@ from app import app
 
 layout = [dcc.Markdown("""
 ### Intro
-Marin county is one of the most expensive residential real estate markets in the country.  It is also
-one of the most competitive markets for buyers with more than 45% of all single-family homes in 2018
+Marin County California is one of the most expensive residential real estate markets in the country.  It is also
+one of the most competitive markets with more than 45% of all single-family homes in 2018
 receiving multiple offers.  How does a buyer or buyer's agent determine the optimal price to bid on a home -
 a price high enough to win the bidding war, yet not too high over the next highest bid.  Essentially it is
 a classic auction problem.
