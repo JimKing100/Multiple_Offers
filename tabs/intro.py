@@ -19,5 +19,5 @@ expected offers and listing price and the app will provide the predicted sales p
 
 As a rule of thumb, real estate agents have used anywhere from 2 to 3 percent per offer to determine the
 price to pay in a bidding war.  For example, if there are 3 offers the bid should be anywhere from 6% to
-9% over the list price.
+9% over the list price. 
 """)]
