@@ -14,6 +14,7 @@ app.layout = html.Div([
         options=[
        {'label': 'YES', 'value': 'YES. I don not mind'},
        {'label': 'NO', 'value': 'NO. I don not mind.'},
+        ]
        value='YES'
 )
 ], style=style)
