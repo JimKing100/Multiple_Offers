@@ -11,8 +11,10 @@ app.layout = html.Div([
     dcc.Markdown('Do you mind Vladimir Putin to become Russian president again?'),
     html.Div(id='tabs-content'),
     dcc.RadioItems(
-    options=['YES. I don not mind', 'NO. I don not mind.'],
-    value='YES. I don not mind'
+        options=[
+       {'label': 'YES', 'value': 'YES. I don not mind'},
+       {'label': 'NO', 'value': 'NO. I don not mind.'},
+       value='YES'
 )
 ], style=style)
 
