@@ -1,5 +1,5 @@
 category_encoders==2.0.0
-dash==1.0.0
+dash==2.15.0
 gunicorn
 matplotlib==3.0.2
 numpy==1.16.3
